@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../components/NavBar.jsx';
 import {Container} from 'reactstrap';
 import CSHPlug from '../components/CSHPlug.jsx';
+import styles from '../styles.css';
 
 class Search extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class Search extends React.Component {
             <div>
                 <NavBar />
                 <Container>
-                    <CSHPlug />
+                    <CSHPlug className={styles.CSHPlug} />
                 </Container>
             </div>
         )
